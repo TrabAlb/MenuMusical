@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "MenuMusical:build:production"
+              "buildTarget": "MenuMusical:build:production"
             },
             "development": {
-              "browserTarget": "MenuMusical:build:development"
+              "buildTarget": "MenuMusical:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "MenuMusical:build"
+            "buildTarget": "MenuMusical:build"
           }
         },
         "test": {
