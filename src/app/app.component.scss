@@ -1,0 +1,107 @@
+.container {
+    max-width: none;
+    max-height: none;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    scrollbar-width: none;
+    scrollbar-gutter: 0;
+}
+
+.section-text {
+    font-family: "BricolageGrotesque", "arial", sans-serif;
+    font-size: 95px;
+    font-weight: 900;
+    color: #EAEAEA;
+    cursor: pointer;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.section-formulario {
+    font-family: "BricolageGrotesque", "arial", sans-serif;
+    font-size: 75px;
+    font-weight: 900;
+    color: #EAEAEA;
+    padding-left: 40px;
+}
+
+.section-form {
+    font-family: "BricolageGrotesque", "arial", sans-serif;
+    font-size: 75px;
+    font-weight: 900;
+    color: rgb(96, 91, 229);
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.subtitles {
+    font-family: "DMSans", "arial", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #EAEAEA;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.img {
+    &Calendar{
+        box-shadow: inset 0 0 0 1000px rgba(97, 145, 231, 0.5);
+        &:hover {
+            box-shadow: inset 0 0 0 1000px rgba(97, 145, 231, 0.8);
+        }
+    }
+    &Podcast {
+        box-shadow: inset 0 0 0 1000px rgba(254, 181, 1, 0.5);
+        &:hover {
+            box-shadow: inset 0 0 0 1000px rgba(254, 181, 1, 0.8);
+        }
+    }
+    &Studio {
+        box-shadow: inset 0 0 0 1000px rgba(234, 68, 46, 0.5);
+        &:hover {
+            box-shadow: inset 0 0 0 1000px rgba(234, 68, 46, 0.8);
+        }
+    }
+    &Formulario {
+        background-image: url(../assets/img/formularioimage.jpg);
+        box-shadow: inset 0 0 0 1000px rgba(231, 144, 254, 0.7);
+        background-size: contain;
+    }
+    &Calendar2{
+        background-image: url(../assets/img/calendarimage.jpeg);
+        background-size: cover;
+        background-position-y: bottom;
+        box-shadow: inset 0 0 0 1000px rgba(97, 145, 231, 0.5);
+        &:hover {
+            box-shadow: inset 0 0 0 1000px rgba(97, 145, 231, 0.8);
+        }
+    }
+}
+
+.video-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .video-container video {
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    bottom: -87%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+  }
