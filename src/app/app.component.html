@@ -7,12 +7,12 @@
         </video>
         <div class="d-grid" style="justify-items: center;">
           <span class="section-text">Podcast</span>
-          <div class="d-flex" style="justify-content: space-evenly;"> 
-            <div btn class="subtitles" (click)="redirectPodcast()">Youtube</div>
-            <div btn class="subtitles">Spotify</div>
+          <div class="d-flex" style="justify-content: space-evenly;">
+            <div btn class="subtitles cursorHand" (click)="redirectPodcast()">Youtube</div>
+            <div btn class="subtitles cursorHand">Spotify</div>
           </div>
         </div>
-      </div>      
+      </div>
     </div>
     <div class="col w-100 h-100 section imgCalendar2">
       <div class="video-container">
@@ -20,7 +20,7 @@
           <source src="../assets/video/calendarbgvideo.mp4" type="video/mp4" />
         </video>
         <div class="d-grid" style="justify-items: center;">
-          <div btn class="section-text" (click)="redirectCalendar()">Calendar & Map</div>
+          <div class="section-text cursorHand" (click)="redirectCalendar()">Calendar & Map</div>
           <div class="subtitles">Check today's events</div>
         </div>
       </div>
@@ -31,17 +31,17 @@
           <source src="../assets/video/studiobgvideo.mp4" type="video/mp4" />
         </video>
         <div class="d-grid" style="justify-items: center;">
-          <div btn class="section-text" (click)="redirectStudio()">Studio</div>
+          <div class="section-text cursorHand" (click)="redirectStudio()">Studio</div>
           <div class="subtitles">Producciones Audiovisuales</div>
         </div>
-      </div>      
+      </div>
     </div>
   </div>
   <div class="row w-100 h-25">
     <div class="col w-100 h-100 section imgFormulario">
       <div class="d-flex" style="align-items: center;">
         <div class="section-formulario">Envíanos tus eventos con este</div>
-        <div btn class="section-form" (click)="redirectForm()">formulario</div>
+        <div class="section-form cursorHand" (click)="redirectForm()">formulario</div>
       </div>
     </div>
   </div>
