@@ -1,48 +1,20 @@
-<div class="container">
-  <div class="row w-100 h-75">
+<app-navbar style="z-index: 10; position: absolute;"></app-navbar>
+
+<div class="container" style="z-index: 1;">
+  <div class="row w-100 h-75 m-0">
     <div class="col w-100 h-100 section imgPodcast">
-      <div class="video-container">
-        <video autoplay [muted]="'muted'" loop>
-          <source src="../assets/video/pogcastbgvideo.mp4" type="video/mp4" />
-        </video>
-        <div class="d-grid" style="justify-items: center;">
-          <span class="section-text">Podcast</span>
-          <div class="d-flex" style="justify-content: space-evenly;">
-            <div btn class="subtitles cursorHand" (click)="redirectPodcast()">Youtube</div>
-            <div btn class="subtitles cursorHand">Spotify</div>
-          </div>
-        </div>
-      </div>
+      <app-section [data]="dataPodcast" class="w-100 h-100"></app-section>
     </div>
-    <div class="col w-100 h-100 section imgCalendar2">
-      <div class="video-container">
-        <video autoplay [muted]="'muted'" loop>
-          <source src="../assets/video/calendarbgvideo.mp4" type="video/mp4" />
-        </video>
-        <div class="d-grid" style="justify-items: center;">
-          <div class="section-text cursorHand" (click)="redirectCalendar()">Calendar & Map</div>
-          <div class="subtitles">Check today's events</div>
-        </div>
-      </div>
+    <div class="col w-100 h-100 section imgCalendar">
+      <app-section [data]="dataCalendar" class="w-100 h-100"></app-section>
     </div>
     <div class="col w-100 h-100 section imgStudio">
-      <div class="video-container">
-        <video autoplay [muted]="'muted'" loop>
-          <source src="../assets/video/studiobgvideo.mp4" type="video/mp4" />
-        </video>
-        <div class="d-grid" style="justify-items: center;">
-          <div class="section-text cursorHand" (click)="redirectStudio()">Studio</div>
-          <div class="subtitles">Producciones Audiovisuales</div>
-        </div>
-      </div>
+      <app-section [data]="dataStudio" class="w-100 h-100"></app-section>
     </div>
   </div>
-  <div class="row w-100 h-25">
+  <div class="row w-100 h-25 m-0">
     <div class="col w-100 h-100 section imgFormulario">
-      <div class="d-flex" style="align-items: center;">
-        <div class="section-formulario">Envíanos tus eventos con este</div>
-        <div class="section-form cursorHand" (click)="redirectForm()">formulario</div>
-      </div>
+      <app-section [data]="dataForm" class="w-100 h-100"></app-section>
     </div>
   </div>
 </div>

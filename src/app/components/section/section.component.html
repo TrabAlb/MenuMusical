@@ -1,0 +1,43 @@
+<div *ngIf="data" class="w-100 h-100">
+    <div class="video-container">
+        <video autoplay [muted]="'muted'" loop *ngIf="data.video">
+            <source src="{{data.video}}" type="video/mp4" />
+        </video>
+        <div *ngIf="!data?.text?.form; else form">
+            <div class="d-grid" style="justify-items: center;">
+                <div class="section-title" [ngClass]="{'cursorHand': data.text.doRedirect}"
+                    (click)="data.text.doRedirect ? redirect(data.text.redirectLink) : ''">{{data.text.title}}
+                </div>
+                <div class="d-flex" style="justify-content: space-evenly;">
+                    <div *ngFor="let subtitle of data?.text?.subtitles">
+                        <div class="subtitles" [ngClass]="{'cursorHand': subtitle?.doRedirect}"
+                            (click)="subtitle?.doRedirect ? redirect(subtitle.redirectLink) : ''">
+                            <div class="d-flex">
+                                <i *ngIf="subtitle?.icon" [ngClass]="subtitle?.icon"></i>
+                                <div style="padding-left: 10px;">{{subtitle?.title}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ng-template #form>
+            <div class="d-flex" style="align-items: center; justify-content: center;">
+                <div *ngFor="let subtitle of data?.text?.subtitles">
+                    <div *ngIf="!subtitle.form; else formLink">
+                        <div class="section-formulario" [ngClass]="{'cursorHand': subtitle?.doRedirect}"
+                            (click)="subtitle?.doRedirect ? redirect(subtitle.redirectLink) : ''">
+                            {{subtitle?.title}}
+                        </div>
+                    </div>
+                    <ng-template #formLink>
+                        <div class="section-form" [ngClass]="{'cursorHand': subtitle?.doRedirect}"
+                            (click)="subtitle?.doRedirect ? redirect(subtitle.redirectLink) : ''">
+                            {{subtitle?.title}}
+                        </div>
+                    </ng-template>
+                </div>
+            </div>
+        </ng-template>
+    </div>
+</div>
