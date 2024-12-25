@@ -65,7 +65,7 @@ export class HomeComponent implements OnInit {
 
     this.dataCalendar = {
       text: {
-        title: 'Calendar & Map',
+        title: 'Calendario & Mapa',
         doRedirect: true,
         redirectLink: 'https://www.appsheet.com/start/86d0f89c-d6c3-466f-a39b-433ff695f70b',
         form: false,
@@ -73,7 +73,7 @@ export class HomeComponent implements OnInit {
           {
             doRedirect: false,
             form: false,
-            title: "Check today's events",
+            title: "Consulta los eventos",
             subtitles: [],
           }
         ]
