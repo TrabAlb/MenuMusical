@@ -10,8 +10,10 @@
 }
 
 .navbar {
-    justify-content: space-between;
+    //justify-content: space-between; //removed logo
+    justify-content: flex-end;
     padding: 0;
+    position: fixed;
 }
 
 .logo {
