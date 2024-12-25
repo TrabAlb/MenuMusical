@@ -8,13 +8,13 @@
                 <div class="section-title" [ngClass]="{'cursorHand': data.text.doRedirect}"
                     (click)="data.text.doRedirect ? redirect(data.text.redirectLink) : ''">{{data.text.title}}
                 </div>
-                <div class="d-flex" style="justify-content: space-evenly;">
+                <div class="subtitle-row">
                     <div *ngFor="let subtitle of data?.text?.subtitles">
                         <div class="subtitles" [ngClass]="{'cursorHand': subtitle?.doRedirect}"
                             (click)="subtitle?.doRedirect ? redirect(subtitle.redirectLink) : ''">
-                            <div class="d-flex">
+                            <div class="icon-text-row">
                                 <i *ngIf="subtitle?.icon" [ngClass]="subtitle?.icon"></i>
-                                <div style="padding-left: 10px;">{{subtitle?.title}}</div>
+                                <div class="icons">{{subtitle?.title}}</div>
                             </div>
                         </div>
                     </div>
@@ -22,7 +22,7 @@
             </div>
         </div>
         <ng-template #form>
-            <div class="d-flex" style="align-items: center; justify-content: center;">
+            <div class="formulario">
                 <div *ngFor="let subtitle of data?.text?.subtitles">
                     <div *ngIf="!subtitle.form; else formLink">
                         <div class="section-formulario" [ngClass]="{'cursorHand': subtitle?.doRedirect}"

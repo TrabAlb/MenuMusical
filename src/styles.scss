@@ -19,3 +19,7 @@
     font-family: DMSans;
     src: url(assets/fonts/DMSans-VariableFont_opsz\,wght.ttf) format("opentype");
 }
+
+body {
+    overflow-x: hidden !important;
+}
