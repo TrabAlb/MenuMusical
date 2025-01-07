@@ -7,7 +7,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
   standalone: false
 })
 export class NavbarComponent {
-  @Output() showAboutEvent!: EventEmitter<boolean>;
+  @Output() showAboutEvent: EventEmitter<boolean> = new EventEmitter<boolean>();
 
   public showAboutVar: boolean = false;
   showAbout() {
