@@ -1,6 +1,6 @@
 <div *ngIf="data" class="w-100 h-100">
     <div class="video-container">
-        <video autoplay [muted]="'muted'" loop *ngIf="data.video">
+        <video [autoplay]="true" [muted]="true" loop *ngIf="data.video">
             <source src="{{data.video}}" type="video/mp4" />
         </video>
         <div *ngIf="!data?.text?.form; else form">
