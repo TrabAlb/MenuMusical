@@ -15,6 +15,8 @@ export class AppComponent implements OnInit {
   public dataStudio?: DesignType;
   public dataForm?: DesignType;
 
+  public showAboutVar: boolean = false;
+
   ngOnInit() {
     this.buildObjects();
   }
@@ -107,7 +109,6 @@ export class AppComponent implements OnInit {
     }
   }
 
-
   redirectCalendar() {
     window.location.href = 'https://www.appsheet.com/start/86d0f89c-d6c3-466f-a39b-433ff695f70b';
     //window.open('https://www.appsheet.com/start/86d0f89c-d6c3-466f-a39b-433ff695f70b', '_blank');
@@ -128,5 +129,9 @@ export class AppComponent implements OnInit {
   redirectForm() {
     window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSfi9MIT2Q7hw8VHN6XkmEFed3E-2TIwlUpHPSTk9js5_AJ2QQ/viewform';
     //window.open('https://docs.google.com/forms/d/e/1FAIpQLSfi9MIT2Q7hw8VHN6XkmEFed3E-2TIwlUpHPSTk9js5_AJ2QQ/viewform', '_blank');
+  }
+
+  showAbout($event: boolean) {
+    this.showAboutVar = $event;
   }
 }

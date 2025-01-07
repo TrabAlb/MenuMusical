@@ -1,2 +1,3 @@
-<app-navbar class="w-100" style="position: fixed;"></app-navbar>
-<app-home style="z-index: -1;"></app-home>
+<app-navbar class="w-100" style="position: fixed;" (showAboutEvent)="showAbout($event)"></app-navbar>
+<app-about *ngIf="showAboutVar" style="z-index: -1;"></app-about>
+<app-home style="z-index: -2;"></app-home>
