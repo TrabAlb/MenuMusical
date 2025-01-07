@@ -19,8 +19,8 @@ export class SectionComponent implements OnInit {
   }
 
   redirect(link?: string) {
-    window.location.href = link!;
-    //window.open(link, '_blank');
+    //window.location.href = link!;
+    window.open(link, '_blank');
   }
 }
 

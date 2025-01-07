@@ -1,10 +1,26 @@
-<div class="container" style="z-index: 1;">
+<div class="container d-none d-lg-block d-xl-block" style="z-index: 1;">
     <div class="row h-100 m-0">
         <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 h-75 section imgPodcast">
             <app-section [data]="dataPodcast" class="w-100 h-100"></app-section>
         </div>
         <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 h-75 section imgCalendar">
             <app-section [data]="dataCalendar" class="w-100 h-100"></app-section>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 h-75 section imgStudio">
+            <app-section [data]="dataStudio" class="w-100 h-100"></app-section>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg col-xl h-25 section imgFormulario">
+            <app-section [data]="dataForm" class="w-100 h-100"></app-section>
+        </div>
+    </div>
+</div>
+<div class="container d-block d-lg-none d-xl-none" style="z-index: 1;">
+    <div class="row h-100 m-0">
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 h-75 section imgCalendar">
+            <app-section [data]="dataCalendar" class="w-100 h-100"></app-section>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 h-75 section imgPodcast">
+            <app-section [data]="dataPodcast" class="w-100 h-100"></app-section>
         </div>
         <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 h-75 section imgStudio">
             <app-section [data]="dataStudio" class="w-100 h-100"></app-section>
