@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DesignType } from './models/designData';
+import { Subject } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -16,9 +17,28 @@ export class AppComponent implements OnInit {
   public dataForm?: DesignType;
 
   public showAboutVar: boolean = false;
+  public scrolled: boolean = false;
+  public events = ['wheel', 'touchmove'];
+
+  public userActivity: any;
+  userInactive: Subject<any> = new Subject();
+
+  constructor(){    
+    this.setTimeout();
+    this.userInactive.subscribe(() => {this.scrolled = false});
+    
+  }
+
+  setTimeout() {
+    this.userActivity = setTimeout(() => this.userInactive.next(undefined), 3000);
+  }
 
   ngOnInit() {
     this.buildObjects();
+    this.events.forEach(e => document.addEventListener(e, () => { this.scrolled = true;
+      clearTimeout(this.userActivity);
+      this.setTimeout();
+     }, false));
   }
 
   buildObjects() {
