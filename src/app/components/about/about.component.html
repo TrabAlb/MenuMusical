@@ -1,1 +1,55 @@
-<p>about works!</p>
+<div class="container-fluid aboutContainer" [ngClass]="{'d-none': (changes.currentValue == undefined ? true : false), 'animationOpen': (changes.currentValue == true ? true : false), 'animationClose': (changes.currentValue == false ? true : false)}">
+    <div class="row h-100">
+        <div class="col pr0">
+            <div class="section br">
+                <div class="d-grid content">
+                    <div class="label">
+                        <u>Contactos</u>
+                    </div>
+                    <div class="d-grid text">
+                        <div class="d-flex cursorHand pb" style="width: fit-content">
+                            <i class="bi bi-instagram"></i>
+                            <div class="cEntry" (click)="redirectInstagram()">
+                                {{'Instagram: '}}&nbsp;&nbsp;{{'@'}}<i>menu_musical_barcelona</i>
+                            </div>
+                        </div>
+                        <div class="d-flex pb" style="width: fit-content">
+                            <i class="bi bi-envelope"></i>
+                            <div class="cEntry">
+                                {{'Email: '}}&nbsp;&nbsp;<i>{{'menumusicalbcn@gmail.com'}}</i>
+                            </div>
+                        </div>
+                        <div class="d-flex cursorHand pb" style="width: fit-content">
+                            <i class="bi bi-heart-fill"></i>
+                            <div class="cEntry" (click)="redirectInstagram()">
+                                {{'Apóyanos : '}}&nbsp;&nbsp;<i>{{'próximamente'}}</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col pr0 pl0">
+            <div class="section">
+                <div class="d-grid content">
+                    <div class="label">
+                        <u>Sobre Nosotros</u>
+                    </div>
+                    <div class="text">
+                        {{aboutUsText}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col pl0">
+            <div class="section bl d-flex align-items-end justify-content-end">
+                <div class="d-grid content">
+                    <div class="text">
+                        © 2025 Gabriele Trabucco,
+                        Reservados todos los derechos.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

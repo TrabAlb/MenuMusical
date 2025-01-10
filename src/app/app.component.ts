@@ -151,7 +151,5 @@ export class AppComponent implements OnInit {
     //window.open('https://docs.google.com/forms/d/e/1FAIpQLSfi9MIT2Q7hw8VHN6XkmEFed3E-2TIwlUpHPSTk9js5_AJ2QQ/viewform', '_blank');
   }
 
-  showAbout($event: boolean) {
-    this.showAboutVar = $event;
-  }
+  
 }

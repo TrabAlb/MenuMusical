@@ -40,9 +40,21 @@
     background: url(../../../assets/img/text_logo_W.svg) 50% 50% no-repeat;
     background-size: 100%;
 
-    &:hover {
+    @media(hover: hover) and (pointer: fine) {
+        &:hover {
+            background-image: url(../../../assets/img/text_logo_B.svg);
+            background-size: 100%;
+            cursor: pointer;
+        }
+    }
+    &:active {
         background-image: url(../../../assets/img/text_logo_B.svg);
         background-size: 100%;
         cursor: pointer;
     }
+    // &:hover, &:active {
+    //     background-image: url(../../../assets/img/text_logo_B.svg);
+    //     background-size: 100%;
+    //     cursor: pointer;
+    // }
 }

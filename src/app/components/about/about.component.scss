@@ -1,0 +1,79 @@
+.aboutContainer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: rgba(68, 67, 67, 0.9);
+    color: white;
+    z-index: -1;
+    height: 100%;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.animationOpen {
+    clip: rect(0, 100vw, auto, 100vw);
+    animation: slideON 0.5s linear forwards; 
+}
+
+.animationClose {
+    clip: rect(0, 100vw, auto, 0);
+    animation: slideOFF 0.5s linear forwards; 
+}
+
+@keyframes slideON {
+    100% { clip: rect(0, 100vw, auto, 0); }
+}
+
+@keyframes slideOFF {
+    100% { clip: rect(0, 100vw, auto, 100vw); }
+}
+  
+  
+.cursorHand {
+    cursor: pointer;
+}
+
+.section {
+    height: 100%;
+}
+
+.content {
+    padding-left: 1.5rem;
+}
+
+.label{
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.text {
+    font-size: 1.075rem;
+    text-wrap: wrap;
+    white-space: pre-line;
+}
+
+.cEntry {
+    padding-left: 0.5rem;
+}
+
+.br {
+    border-right: 1px solid white;
+}
+
+.bl {
+    border-left: 1px solid white;
+}
+
+.pr0 {
+    padding-right: 0 !important;
+}
+
+.pl0 {
+    padding-left: 0 !important;
+}
+
+.pb {
+    padding-bottom: 0.5rem;
+}
