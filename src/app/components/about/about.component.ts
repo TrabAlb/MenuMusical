@@ -21,30 +21,13 @@ export class AboutComponent implements OnChanges{
     window.open('https://www.instagram.com/menu_musical_barcelona/', '_blank');
   }
 
+  redirectKofi() {
+    window.open('https://ko-fi.com/menu_musical', '_blank');
+  }
+
   ngOnChanges(changes: SimpleChanges): void {
     let show = changes['showAboutVar'];
-    this.changes = show; 
-    // if(show.currentValue != show.previousValue){
-    //   if(show.currentValue == true) {
-    //     document.getElementById('aboutPage')?.classList.remove('animationOpen', 'animationClose', 'd-none');
-    //     document.getElementById('aboutPage')?.classList.add('animationOpen');
-    //     console.log(show.currentValue);
-    //   }
-    //   if(show.currentValue == false) {
-    //     document.getElementById('aboutPage')?.classList.remove('animationOpen', 'animationClose', 'd-none');
-    //     document.getElementById('aboutPage')?.classList.add('animationClose');
-    //     setTimeout(() => {
-    //       document.getElementById('aboutPage')?.classList.add('d-none');
-    //     }, 2000);
-    //     console.log(show.currentValue);
-    //   }
-    // }
-    // if(show.currentValue == undefined) {
-    //   document.getElementById('aboutPage')?.classList.remove('animationOpen', 'animationClose', 'd-none');
-    //   document.getElementById('aboutPage')?.classList.add('d-none');
-    //   console.log(show.currentValue);
-    // }
-      
+    this.changes = show;
   }
 
       

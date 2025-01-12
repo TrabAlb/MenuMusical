@@ -42,18 +42,6 @@
     padding-left: 1.5rem;
 }
 
-.label{
-    font-size: 1.5rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
-.text {
-    font-size: 1.075rem;
-    text-wrap: wrap;
-    white-space: pre-line;
-}
-
 .cEntry {
     padding-left: 0.5rem;
 }
@@ -66,6 +54,14 @@
     border-left: 1px solid white;
 }
 
+.bt {
+    border-top: 1px solid white;
+}
+
+.bb {
+    border-bottom: 1px solid white;
+}
+
 .pr0 {
     padding-right: 0 !important;
 }
@@ -76,4 +72,98 @@
 
 .pb {
     padding-bottom: 0.5rem;
+}
+
+.pb-mobile {
+    padding-bottom: 1rem;
+}
+
+
+@media only screen and (max-width: 576px) {
+    .label-aboutUS-mobile{
+        font-size: 1.2rem;
+        padding-top: 5rem;
+        padding-bottom: 1rem;
+    }
+    .label-contacts-mobile{
+        font-size: 1.2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .label-copyright-mobile{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    
+    .text {
+        font-size: 0.9rem;
+        text-wrap: wrap;
+        white-space: pre-line;
+    }
+    .content {
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    .label-aboutUS-mobile{
+        font-size: 1.5rem;
+        padding-top: 5rem;
+        padding-bottom: 1rem;
+    }
+    .label-contacts-mobile{
+        font-size: 1.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .label-copyright-mobile{
+        font-size: 1.5rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    
+    .text {
+        font-size: 1.075rem;
+        text-wrap: wrap;
+        white-space: pre-line;
+    }
+    .content {
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) { 
+    .label{
+        font-size: 1.2rem;
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+    }
+    .text {
+        font-size: 0.6rem;
+        text-wrap: wrap;
+        white-space: pre-line;
+    }
+    .content {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+}
+
+@media only screen and (min-width: 1201px) {
+    .label{
+        font-size: 1.2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }    
+    .text {
+        font-size: 0.825rem;
+        text-wrap: wrap;
+        white-space: pre-line;
+    }
+    .content {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
 }

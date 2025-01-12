@@ -19,6 +19,61 @@
     animation:         fade_move_down 4s ease-in-out infinite;
 }
 
+.pointerEventNone {
+  pointer-events: none;
+}
+
+@media only screen and (max-width: 576px) {
+  .about {
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .about {
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  .about {
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: 30%;
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .about {
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: 30%;
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
 
 /*animated scroll arrow animation*/
 @-webkit-keyframes fade_move_down {

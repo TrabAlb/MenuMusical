@@ -1,3 +1,4 @@
-<app-navbar class="w-100" style="position: fixed; z-index: 2; height: 30%;"></app-navbar>
-<div id="scrolIndicator" class="scroll-down d-lg-none d-xl-none" [hidden]="scrolled" style="z-index: 9;"></div>
+<app-navbar id="navbar" class="w-100" style="position: fixed; z-index: 2;" (showAboutEvent)="showAbout($event)"></app-navbar>
+<app-about class="about" [ngClass]="{'pointerEventNone': !showAboutVar}" [showAboutVar]="showAboutVar"></app-about>
+<div id="scrolIndicator" class="scroll-down d-lg-none d-xl-none" *ngIf="!showAboutVar" [hidden]="scrolled" style="z-index: 9;"></div>
 <app-home style="z-index: -5;"></app-home>
