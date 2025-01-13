@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
   public dataStudio?: DesignType;
   public dataForm?: DesignType;
 
-  public showAboutVar: boolean = false;
+  public showAboutVar!: boolean;
   public scrolled: boolean = false;
   public events = ['wheel', 'touchmove'];
 
