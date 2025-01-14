@@ -30,15 +30,15 @@ export class HomeComponent implements OnInit {
             form: false,
             title: 'Youtube',
             subtitles: [],
-            redirectLink: 'https://www.youtube.com/@menu_musical_barcelona/featured',
+            redirectLink: 'https://youtu.be/3I0dBI_iqv0',
             icon: 'bi bi-youtube'
           },
           {
-            doRedirect: false,
+            doRedirect: true,
             form: false,
             title: 'Spotify',
             subtitles: [],
-            redirectLink: '',
+            redirectLink: 'https://open.spotify.com/show/0puPONoF6msnRpupRByoYE?si=43164f42e4b54fbe',
             icon: 'bi bi-spotify'
           }
         ]
