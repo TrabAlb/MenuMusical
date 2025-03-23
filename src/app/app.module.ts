@@ -8,6 +8,7 @@ import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
+import { AnalyticsService } from './services';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { AboutComponent } from './components/about/about.component';
     AppRoutingModule,
     CommonModule
   ],
-  providers: [],
+  providers: [AnalyticsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

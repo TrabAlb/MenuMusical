@@ -30,7 +30,7 @@ export class HomeComponent implements OnInit {
             form: false,
             title: 'Youtube',
             subtitles: [],
-            redirectLink: 'https://youtu.be/3I0dBI_iqv0',
+            redirectLink: 'https://www.youtube.com/playlist?list=PLhDEmOBTl7CG3ud-WP1wNyCEZU_TVOG2J',
             icon: 'bi bi-youtube'
           },
           {
@@ -50,7 +50,7 @@ export class HomeComponent implements OnInit {
       text: {
         title: 'Studio',
         doRedirect: true,
-        redirectLink: 'https://www.youtube.com/@menu_musical_barcelona/featured',
+        redirectLink: 'https://www.youtube.com/playlist?list=PLhDEmOBTl7CFBO0lH1y3j1SSaH6aAkDd7',
         form: false,
         subtitles: [
           {

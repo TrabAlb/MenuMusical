@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { DesignType } from './models/designData';
 import { Subject } from 'rxjs';
+import { NavigationEnd, Route, Router } from '@angular/router';
+import { AnalyticsService } from './services';
+
+declare var gtag: any;
 
 @Component({
   selector: 'app-root',
@@ -23,10 +27,18 @@ export class AppComponent implements OnInit {
   public userActivity: any;
   userInactive: Subject<any> = new Subject();
 
-  constructor(){    
+  constructor(private analyticsService: AnalyticsService,public router: Router){    
     this.setTimeout();
     this.userInactive.subscribe(() => {this.scrolled = false});
-    
+    const navEndEvents = this.router.events.subscribe(event => {
+      if(event instanceof NavigationEnd){
+          
+        gtag('config', 'G-5EQ9LYPMDC', {
+          'page_path': event.urlAfterRedirects
+        });
+       }
+    }
+    )
   }
 
   setTimeout() {
@@ -34,6 +46,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.analyticsService.trackEvent('Load', 'Home page has Loaded', 'Home Page');
     this.buildObjects();
     this.events.forEach(e => document.addEventListener(e, () => { this.scrolled = true;
       clearTimeout(this.userActivity);
