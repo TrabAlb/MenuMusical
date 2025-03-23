@@ -41,8 +41,10 @@
     
         &-form {
             font-family: "BricolageGrotesque", "arial", sans-serif;
-            font-size: 2rem;
-            color: rgb(96, 91, 229);
+            color: #EAEAEA;
+            font-size: 3rem;
+            font-weight: 900;
+            text-align: center;
         }
     }
     .subtitle-row {
@@ -94,8 +96,9 @@
     
         &-form {
             font-family: "BricolageGrotesque", "arial", sans-serif;
-            font-size: 3rem;
-            color: rgb(96, 91, 229);
+            color: #EAEAEA;
+            font-size: 5rem;
+            font-weight: 900;
         }
     }
     .subtitle-row {
@@ -146,8 +149,9 @@
     
         &-form {
             font-family: "BricolageGrotesque", "arial", sans-serif;
-            font-size: 2rem;
-            color: rgb(96, 91, 229);
+            color: #EAEAEA;
+            font-size: 3rem;
+            font-weight: 900;
         }
     }
     .subtitle-row {
@@ -199,8 +203,9 @@
     
         &-form {
             font-family: "BricolageGrotesque", "arial", sans-serif;
-            font-size: 2rem;
-            color: rgb(96, 91, 229);
+            font-size: 3rem;
+            font-weight: 900;
+            color: #EAEAEA;
         }
     }
     .subtitle-row {
@@ -232,56 +237,6 @@
         flex-direction: column;
     }
 }
-// @media only screen and (min-width: 1440px) {
-//     .section {
-//         &-title {
-//             font-family: "BricolageGrotesque", "arial", sans-serif;
-//             color: #EAEAEA;
-//             font-size: 5rem;
-//             font-weight: 900;
-//         }
-    
-//         &-formulario {
-//             font-family: "BricolageGrotesque", "arial", sans-serif;
-//             color: #EAEAEA;
-//             font-size: 4rem;
-//             padding-left: 2.5rem;
-//         }
-    
-//         &-form {
-//             font-family: "BricolageGrotesque", "arial", sans-serif;
-//             font-size: 4rem;
-//             padding-left: 1.25rem;
-//             color: rgb(96, 91, 229);
-//         }
-//     }
-//     .subtitle-row {
-//         display: flex;
-//         justify-content: space-evenly;
-//         width: 100%;
-//     }
-//     .subtitles {
-//         font-family: "DMSans", "arial", sans-serif;
-//         font-size: 1.5rem;
-//         font-weight: 600;
-//         color: #EAEAEA;
-//         text-transform: uppercase;
-//     }
-//     .icon-text-row {
-//         display: flex;
-//         align-items: center;
-//         width: 100%;
-//     }
-//     .icons{
-//         padding-left: 0.5rem;
-//     }
-//     .formulario {
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-//         flex-direction: row;
-//     }
-// }
 
 @media only screen and (min-width: 1440px) {
     .section {
@@ -301,9 +256,9 @@
     
         &-form {
             font-family: "BricolageGrotesque", "arial", sans-serif;
-            font-size: 4rem;
-            padding-left: 1.25rem;
-            color: rgb(96, 91, 229);
+            font-size: 5rem;
+            font-weight: 900;
+            color: #EAEAEA;
         }
     }
     .subtitle-row {

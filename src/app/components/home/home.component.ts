@@ -90,13 +90,13 @@ export class HomeComponent implements OnInit {
           {
             doRedirect: false,
             form: false,
-            title: "Envíanos tus eventos con este",
+            title: "",
             subtitles: [],
           },
           {
             doRedirect: true,
             form: true,
-            title: "formulario",
+            title: "Envíanos tus eventos",
             subtitles: [],
             redirectLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfi9MIT2Q7hw8VHN6XkmEFed3E-2TIwlUpHPSTk9js5_AJ2QQ/viewform'
           }
